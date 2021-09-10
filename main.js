@@ -1,5 +1,6 @@
 //Create a reference for canvas 
-canvas = document.getElementById("myCanvas")
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
 //Give specific height and width to the car image
 greencar_width = 75;
 greencar_height = 100;
@@ -105,7 +106,7 @@ function left()
 
 function right()
 {
-	{	if(greencar_x <= 400){
+	{	if(greencar_x <= 700){
 			greencar_x += 10;
 			console.log("when right arrow is pressed,x = "+greencar_x + " | y = " +greencar_x);
 			uploadBackground();
